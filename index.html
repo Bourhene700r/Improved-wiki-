@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Improved Wikipedia</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
+</head>
+<body>
+  <header>
+    <div class="logo-title">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/8/80/Wikipedia-logo-v2.svg" alt="Wiki" class="logo-icon" />
+      <h1><span class="animated-title">Wiki Reader</span></h1>
+    </div>
+    <div id="sky-object" class="sun"></div>
+    <!-- Sky visuals -->
+    <div id="sky-object" class="sun"></div>
+    <div class="cloud cloud-1"></div>
+    <div class="cloud cloud-2"></div>
+    <div class="stars"></div>
+    <div class="skyline"></div>
+    
+    <div class="search-container">
+      <input
+      type="text"
+      id="search"
+      placeholder="Search for articles..."
+      autocomplete="off"
+      autocorrect="off"
+      autocapitalize="off"
+      spellcheck="false"
+    />
+      <ul id="suggestions"></ul>
+    </div>
+    <button id="toggle-theme">
+      <span class="icon sun">☀️</span>
+      <span class="icon moon">🌙</span>
+    </button>
+  </header>
+
+  <main>
+    <section id="article-container">
+      <div id="reading-time" style="margin-bottom: 10px; font-style: italic;"></div>
+      <button id="download-pdf" class="fade-button" style="display: none;">📄 Download PDF</button>
+
+
+      <div id="article-container">
+        <div id="article-html"></div>
+      </div>
+      
+
+    </section>
+  </main>
+
+  <footer>
+    <div id="back-to-top" style="display:none;">⬆️</div>
+  </footer>
+
+  <div id="progress-bar-container">
+    <div id="progress-bar"></div>
+  </div>
+
+  <div id="tooltip-preview"></div>
+
+  <script src="script.js"></script>
+
+
+</body>
+</html>
