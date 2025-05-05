@@ -377,12 +377,14 @@ footer {
 
 .animated-title {
   display: inline-block;
-  background: linear-gradient(90deg, #fff, #eee, #fff);
+  background: linear-gradient(90deg, blue, cyan, yellow);
   background-size: 200% auto;
-  color: #fff;
+  color: blue;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: shineText 3s linear infinite;
 }
+
 
 @keyframes shineText {
   0% {
